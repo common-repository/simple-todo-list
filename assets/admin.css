@@ -1,0 +1,177 @@
+/* General */
+#dashboard-widgets #simple_todo_list .inside {
+	margin: 0;
+	padding: 0;
+}
+
+.simple-todo-list-wrap {
+	position: relative !important;
+}
+
+.simple-todo-list-wrap a {
+	transition: none !important;
+	transition-duration: none !important;
+    transition-property: none !important;
+    transition-timing-function:  none !important;
+}
+
+.simple-todo-list-actions {
+	background: #fafafa;
+    box-sizing: border-box;
+    float: left;
+    line-height: 1em;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    display: block;
+    visibility: visible;
+}
+
+.simple-todo-list-actions a {
+	display: inline-block;
+}
+
+/* Add Item Form */
+.simple-todo-list-add-item-form {
+	display: none;
+	border-top: 1px solid #eee;
+	margin: 0 !important;
+}
+
+/* List Actions */
+.simple-todo-list-actions a.simple-todo-list-clear-list {
+	color: #a00;
+	opacity: 0.5;
+}
+
+.simple-todo-list-actions a.simple-todo-list-clear-list:hover,
+.simple-todo-list-actions a.simple-todo-list-clear-list:focus {
+	color: #a00;
+	opacity: 1.0;
+}
+
+/* Item Actions */
+.simple-todo-list .form-table tr {
+	border-top: 1px solid #eee;
+}
+
+.simple-todo-list tr {
+	border-left: 0 none;
+}
+
+tr.simple-todo-list-is-done {
+	opacity: 0.75;
+}
+
+tr.simple-todo-list-is-done .simple-todo-list-item-content {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.simple-todo-list-do-item {
+	margin-right: 10px !important;
+	color: #aaa;
+}
+
+.simple-todo-list-do-item {
+	display: inline-block;
+	visibility: visible;
+}
+
+.simple-todo-list-is-done .simple-todo-list-do-item {
+	color: #aaa;
+}
+
+.simple-todo-list .dashicons-yes {
+	display: none;
+	visibility: hidden;
+}
+
+.simple-todo-list-is-done .simple-todo-list-do-item  {
+	display: none;
+	visibility: hidden;
+}
+
+.simple-todo-list .simple-todo-list-is-done .dashicons-yes {
+	display: inline-block;
+	visibility: visible;
+}
+
+a.simple-todo-list-cancel-add-item {
+	display: none;
+}
+
+a.simple-todo-list-delete-item {
+	color: #a00;
+}
+
+a.simple-todo-list-delete-item:hover,
+a.simple-todo-list-delete-item:focus {
+	color: red;
+}
+
+.simple-todo-list-time-diff {
+	color: #999;
+	font-size: 90%;
+	margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.simple-todo-list-quick-links {
+	opacity: 0;
+	display: inline-block;
+	visibility: visible;
+	font-size: 90%;
+}
+
+.simple-todo-list-quick-links .notice-dismiss {
+	position: relative !important;
+	padding: 0 !important;
+}
+
+.simple-todo-list .form-table tr:hover .simple-todo-list-quick-links {
+	opacity: 1.0;
+	display: inline-block;
+	visibility: visible;
+}
+
+/* AJAX Overlay */
+.simple-todo-list-ajax-ui {
+	padding: 5px 10px;
+	position: relative;
+	overflow: hidden;
+	background: #fffccc;
+	display: none;
+	visibility: hidden;
+}
+
+.simple-todo-list-ajax-ui-blocker {
+    background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    visibility: hidden;
+}
+
+.simple-todo-list-ajax-working .simple-todo-list-actions {
+	display: none;
+	visibility: hidden;
+}
+
+.simple-todo-list-ajax-working .simple-todo-list-ajax-ui {
+	display: block;
+	visibility: visible;
+}
+
+.simple-todo-list-ajax-working .simple-todo-list-ajax-ui-blocker {
+	display: block;
+	visibility: visible;
+}
+
+.simple-todo-list-ajax-working .simple-todo-list .form-table {
+	margin-top: 0 !important;
+}
